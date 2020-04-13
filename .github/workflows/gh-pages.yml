@@ -1,23 +1,17 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Github pages CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
-on:
-  push:
-    branches:
-      - master
-
+name: Build and Deploy
+on: [push]
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  build-and-deploy:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          publish_branch: gh-pages
+          persist-credentials: false
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: . # The folder the action should deploy.

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.spacer {
+  height: 20px;
+}
+
+.container {
+  background: #23424a;
+  color: white;
+
+  width: 80%;
+  margin: 0 auto;
+
+  height: 300px;
+  padding: 2em;
+}
+
+.responsive-container {
+  background: #23424a;
+  color: white;
+
+  width: 80%;
+  margin: 0 auto;
+
+  /* height: 300px; */
+  padding: 3em;
+}
+
+.responsive-intro-content {
+  width: 60%;
+}

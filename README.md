@@ -33,4 +33,18 @@ __skipping day 2 😥 because didn't code anything specific__
 
 🔗 => [LIVE DEMO](https://nomangul.github.io/conquering-responsive-layouts/enter-max-width/)
 
+
+__skipping day 4 😥 because didn't code anything__
+
+
+----
+
+### 5 - Basic Layout
+
+**Challenge Excercise**
+
+💻 => [SOURCE CODE](https://github.com/NomanGul/conquering-responsive-layouts/tree/master/basic-layout)
+
+🔗 => [LIVE DEMO](https://nomangul.github.io/conquering-responsive-layouts/basic-layout/)
+
 ----
